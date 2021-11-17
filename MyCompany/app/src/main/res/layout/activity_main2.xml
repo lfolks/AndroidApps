@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="5dp"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/AppLogo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/llslogo"
+        android:contentDescription="@string/Legacy_Logo_Desc"
+        />
+
+    <TextView
+        android:id="@+id/AppTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/AppLogo"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/app_title"
+        android:textSize="35sp"
+        />
+
+    <TextView
+        android:id="@+id/PageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AppTitle"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:text="@string/Customer_Page_Title"
+        android:textSize="28sp"
+
+        />
+
+
+    <ScrollView
+        android:id="@+id/CustomerForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PageTitle"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/CustomerNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:labelFor="@id/CustomerName"
+                android:text="@string/Customer_Name"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <EditText
+                android:id="@+id/CustomerName"
+                android:hint="@string/Customer_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/CustomerNameLabel"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/CustomerIDLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/CustomerNameLabel"
+                android:labelFor="@id/CustomerID"
+                android:text="@string/Customer_ID"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <EditText
+                android:id="@+id/CustomerID"
+                android:hint="@string/Customer_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/CustomerName"
+                android:layout_toEndOf="@id/CustomerNameLabel"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="number"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/CustomerAddressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/CustomerIDLabel"
+                android:labelFor="@id/CustomerAddress"
+                android:text="@string/Customer_Address"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <EditText
+                android:id="@+id/CustomerAddress"
+                android:hint="@string/Customer_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/CustomerID"
+                android:layout_toEndOf="@id/CustomerNameLabel"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPostalAddress"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+            <Button
+                android:id="@+id/SubmitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/CustomerAddress"
+                android:layout_marginTop="15dp"
+                android:text="@string/SubmitBtn"
+                />
+
+            <TextView
+                android:id="@+id/NameErr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SubmitBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/IDErr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NameErr"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/AddressErr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/IDErr"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CustomerForm"
+        android:layout_marginTop="15dp"
+        android:text="@string/Home"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:id="@+id/Order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CustomerForm"
+        android:layout_marginTop="15dp"
+        android:text="@string/Order_Info"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RelativeOverlap"
+        />
+
+</RelativeLayout>

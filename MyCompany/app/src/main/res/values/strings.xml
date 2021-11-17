@@ -1,0 +1,67 @@
+<resources>
+
+    <string name="app_name">
+        MyCompany
+    </string>
+
+    <string name="app_title">
+        Customer Interface Agent
+    </string>
+
+    <string name="Customer_Page_Title">
+        Customer Information
+    </string>
+
+    <string name="Order_Page_Title">
+        Order Request
+    </string>
+
+    <string name="Home">
+        Home
+    </string>
+
+    <string name="Customer_Info">
+        Customer Info
+    </string>
+
+    <string name="Order_Info">
+        Order Request
+    </string>
+
+    <string name="Legacy_Logo_Desc">
+        Legacy Learning Solutions Logo
+    </string>
+
+    <string name="Customer_Name">
+        Customer Name
+    </string>
+
+    <string name="Customer_ID">
+        Customer ID
+    </string>
+
+    <string name="Customer_Address">
+        Cust. Address
+    </string>
+
+    <string name="Order_ID">
+        Customer Order ID
+    </string>
+
+    <string name="Order_Name">
+        Order Name
+    </string>
+
+    <string name="Order_Quantity">
+        Order Quantity
+    </string>
+
+    <string name="Order_FulfilledBy">
+        Order Fulfilled By
+    </string>
+
+    <string name="SubmitBtn">
+        Submit
+    </string>
+
+</resources>

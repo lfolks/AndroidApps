@@ -1,0 +1,116 @@
+<resources>
+
+    <string name="app_name">
+        SetupApp
+    </string>
+
+    <string name="pageOneMainTitle">
+        <b>Android Studio Setup</b>
+    </string>
+
+    <string name="pageOneSubTitle">
+        <i>Installing Android Studio</i>
+    </string>
+
+    <string name="pageTwoMainTitle">
+        <b>Android Project</b>
+    </string>
+
+    <string name="pageTwoSubTitle">
+        <i>How to Create a Project</i>
+    </string>
+
+    <string name="pageThreeMainTitle">
+        <b>Compile Android Project</b>
+    </string>
+
+    <string name="pageThreeSubTitle">
+        <i>How to Compile a Project</i>
+    </string>
+
+    <string name="firstPageSteps">
+        &#8226; Download and install the Java Development Kit (JDK) from: <b>http://www.oracle.com/technetwork/java/javase/downloads/index.html</b>\n
+        <i><b>Note:</b> Once the latest JDK has been downloaded, follow the installation steps for your operating system from Oracle\'s website.</i>\n
+        \n&#8226; Download and install the Java Runtime Environment from: <b>https://java.com/en/download/</b>\n
+        \n&#8226; Download the Android Studio from: <b>https://developer.android.com/studio/index.html</b>\n
+        \n<b>On Windows 10? Set Environment Variables for Java Development Kit (JDK).</b>\n
+        \n&#8226; Click on <i>Start</i>.\n
+        &#8226; Type in <i>Environment Variables</i>.\n
+        &#8226; Click on <i>Edit the system environment variables</i>.\n
+        &#8226; Click on the <i>Environment Variables...</i> button.\n
+        &#8226; Under the System variables box, find and select <i>Path</i> from the list.\n
+        &#8226; Click on the <i>Edit...</i> button.\n
+        &#8226; Click on the <i>New</i> button.\n
+        &#8226; Add the following to the list: <i>C:\Program Files\Java\jdk-14.0.1\bin</i>\n
+        \n<b>Prior to installing Android Studio, make sure you have VT-x enabled in your BIOS/UEFI. Check your manufacture\'s documentation for guidance.</b>\n
+        <i><b>Note:</b> Don\'t have VT-x or virtualization support for your computer? You may experience performance issues with the emulator.</i>\n
+        \n<b>Install the Android Studio</b>\n
+        \n&#8226; Go to the folder you downloaded Android Studio to.\n
+        &#8226; Run installation file <i>android-studio-ide-<b>version</b>-windows.exe</i>.\n
+        &#8226; Use the default settings and choices.\n
+        &#8226; You are ready to run Android Studio.\n
+        &#8226; You can choose to use the preconfigured Android Virtual Devices (AVD) or configure your own.\n
+        &#8226; Click on <i>Tools</i>.\n
+        &#8226; Click on <i>AVD Manager</i>.\n
+        &#8226; To edit an existing AVD, click on the <i>pencil</i> icon to the right of the device.\n
+        &#8226; You can manage several options for the virtual device.\n
+        &#8226; To create a new AVD, click on the <i>Create Virtual Device...</i> button and go through the configuration.\n
+    </string>
+
+    <string name="secondPageSteps">
+        &#8226; Start the Android Studio Application.\n
+        &#8226; When the Android Studio Splash screen displays, click on <i>Start a new Android Studio project</i>.\n
+        &#8226; Select the Project Template that you need (Phone and Table, Wear OS, TV, Automotive, and Android Things).\n
+        \n<b>For this guide, we will start an Empty Activity for a phone or tablet.</b>\n
+        \n&#8226; For this guide, we will select <i>Phone and Tablet</i>.\n
+        &#8226; Select <i>Phone and Tablet</i>.\n
+        &#8226; Select <i>Empty Activity</i>.\n
+        &#8226; Enter the name of the application you are creating in the <i>Name</i> field.\n
+        &#8226; Change the <i>Package name</i> field to include your domain instead of com.example.<i>[applicationname]</i>.\n
+        \n<b><i>Example:</i></b> com.gmail.myapplication\n
+        \n&#8226; Enter the location you want to save your project in the <i>Save location</i> field.\n
+        &#8226; Select the language you will be using for the project <i>Kotlin</i> or <i>Java</i> field.\n
+        &#8226; Select the minimum SDK for the project.\n
+        \n<b><i>Note:</i></b> Pay attention to the percentage of devices your app will run on when selecting the minimum SDK.\n
+        \n&#8226; Click the <i>Finish</i> button.\n
+        &#8226; You will now see <i>MainActivity.java</i> and <i>activity_main.xml</i> tabs in the main window of Android Studio.\n
+        &#8226; Start coding!\n
+    </string>
+
+    <string name="thirdPageSteps">
+        Prior to compiling your project and running it, follow these steps.\n
+        \n<b>Analyze your Code</b>\n
+        &#8226; Click on <i>Analyze</i> from the top menu bar.\n
+        &#8226; Click on <i>Inspect code...</i>.\n
+        &#8226; Select the settings you want and click <i>OK</i>.\n
+        &#8226; You will see the results in the <i>Inspection Results</i> window.\n
+        &#8226; Fix the error you see.\n
+        \n<b>Test your App</b>\n
+        &#8226; Click on <i>Run</i> from the top menu bar.\n
+        &#8226; Click on <i>Run \'app\'</i> from the top menu bar.\n
+        &#8226; If prompted, choose the AVD you want to run the app on.\n
+        &#8226; Test out the app on the AVD.\n
+        \nOnce you are satisfied with your error corrections, follow the next steps to clean and rebuild your project.\n
+        \n&#8226; Click on <i>Build</i> from the top menu bar.\n
+        \n&#8226; Click on <i>Rebuild Project</i>.\n
+        \n&#8226; Click on <i>Build</i> from the top menu bar.\n
+        \n&#8226; Click on <i>Make Project</i>.\n
+    </string>
+
+    <string name="NextButton">
+        Next
+    </string>
+
+    <string name="PreviousButton">
+        Previous
+    </string>
+
+    <string name="HomeButton">
+        Home
+    </string>
+
+    <string name="imageContext">
+        Legacy Logo
+    </string>
+
+</resources>

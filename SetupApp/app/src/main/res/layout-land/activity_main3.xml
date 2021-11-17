@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="5dp"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/AppTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/pageThreeMainTitle"
+        android:textSize="24sp"
+        android:gravity="center"
+        />
+
+    <ScrollView
+        android:id="@+id/ScrollBox"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/AppTitle"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            >
+
+            <TextView
+                android:id="@+id/AppSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/pageThreeSubTitle"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/InstructionText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/AppSubTitle"
+                android:text="@string/thirdPageSteps"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/MainAct_HomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ScrollBox"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/HomeButton" />
+
+    <ImageView
+        android:id="@+id/thirdPageImage"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ScrollBox"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/imageContext"
+        />
+
+    <Button
+        android:id="@+id/MainAct3_PreviousPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ScrollBox"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/PreviousButton" />
+
+</RelativeLayout>

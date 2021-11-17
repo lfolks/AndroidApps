@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AppTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/pageOneMainTitle"
+        android:textSize="24sp"
+        android:gravity="center"
+        />
+
+    <ScrollView
+        android:id="@+id/ScrollBox"
+        android:layout_width="627dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/AppTitle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="460dp">
+
+            <ImageView
+                android:id="@+id/firstPageImage"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/imageContext"
+                />
+
+            <TextView
+                android:id="@+id/AppSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/firstPageImage"
+                android:gravity="center"
+                android:text="@string/pageOneSubTitle"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/InstructionText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/AppSubTitle"
+                android:text="@string/firstPageSteps" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/MainAct_NextPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ScrollBox"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:text="@string/NextButton"
+        />
+
+</RelativeLayout>

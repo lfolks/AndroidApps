@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="5dp"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:id="@+id/AppLogo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/llslogo"
+        android:contentDescription="@string/Legacy_Logo_Desc"
+        />
+
+    <TextView
+        android:id="@+id/AppTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/AppLogo"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/app_title"
+        android:textSize="35sp"
+        />
+
+    <TextView
+        android:id="@+id/PageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AppTitle"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:text="@string/Order_Page_Title"
+        android:textSize="28sp"
+        />
+
+    <ScrollView
+        android:id="@+id/OrderForm"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/PageTitle"
+        android:layout_marginTop="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/CustomerOrderIDLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:labelFor="@id/CustomerOrderID"
+                android:text="@string/Order_ID"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <EditText
+                android:id="@+id/CustomerOrderID"
+                android:hint="@string/Order_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/CustomerOrderIDLabel"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="number"
+                android:autofillHints=""
+                tools:ignore="LabelFor"
+                />
+
+            <TextView
+                android:id="@+id/OrderNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/CustomerOrderIDLabel"
+                android:labelFor="@id/OrderName"
+                android:text="@string/Order_Name"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <EditText
+                android:id="@+id/OrderName"
+                android:hint="@string/Order_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/CustomerOrderID"
+                android:layout_toEndOf="@id/CustomerOrderIDLabel"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textAutoCorrect"
+                android:autofillHints=""
+                tools:ignore="LabelFor"
+                />
+
+            <TextView
+                android:id="@+id/OrderQuantityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/OrderNameLabel"
+                android:labelFor="@id/OrderQuantity"
+                android:text="@string/Order_Quantity"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <EditText
+                android:id="@+id/OrderQuantity"
+                android:hint="@string/Order_Quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/OrderName"
+                android:layout_toEndOf="@id/CustomerOrderIDLabel"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="number"
+                android:autofillHints=""
+                tools:ignore="LabelFor"
+                />
+
+            <TextView
+                android:id="@+id/OrderFulfilledByLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/OrderQuantityLabel"
+                android:labelFor="@id/OrderFulfilledBy"
+                android:text="@string/Order_FulfilledBy"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <EditText
+                android:id="@+id/OrderFulfilledBy"
+                android:hint="@string/Order_FulfilledBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/OrderQuantity"
+                android:layout_toEndOf="@id/CustomerOrderIDLabel"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName"
+                android:autofillHints=""
+                tools:ignore="LabelFor"
+                />
+
+            <Button
+                android:id="@+id/SubmitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/OrderFulfilledBy"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="@string/SubmitBtn"
+                />
+
+            <TextView
+                android:id="@+id/OrderIDErr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SubmitBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/OrderNameErr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/OrderIDErr"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/OrderQuantityErr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/OrderNameErr"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/OrderFulfilledByErr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/OrderQuantityErr"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OrderForm"
+        android:layout_marginTop="15dp"
+        android:text="@string/Customer_Info"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:id="@+id/Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OrderForm"
+        android:layout_marginTop="15dp"
+        android:text="@string/Home"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RelativeOverlap"
+        />
+
+</RelativeLayout>

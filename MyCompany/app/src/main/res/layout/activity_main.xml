@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="5dp"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/AppLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/llslogo"
+            android:contentDescription="@string/Legacy_Logo_Desc"
+            />
+
+        <TextView
+            android:id="@+id/AppTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AppLogo"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"
+            android:text="@string/app_title"
+            android:textSize="65sp"
+            />
+
+        <Button
+            android:id="@+id/Customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/Customer_Info"
+            />
+
+        <Button
+            android:id="@+id/Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/Order_Info"
+            tools:ignore="RelativeOverlap"
+            />
+
+</RelativeLayout>
