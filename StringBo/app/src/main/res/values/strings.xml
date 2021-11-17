@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">StringBo</string>
+
+    <string name="StringOneLabel">String 1</string>
+
+    <string name="StringTwoLabel">String 2</string>
+
+    <string name="StringHint">Enter string here</string>
+
+    <string name="ConcatString">Combine Strings</string>
+
+    <string name="CompareString">Compare Strings</string>
+
+    <string name="CountVowels">Count Vowels</string>
+</resources>
