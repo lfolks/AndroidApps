@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_title"
+        android:textSize="55sp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AppTitle"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/NumberOne"
+                android:hint="@string/NumOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="numberDecimal"
+                android:autofillHints=""
+                tools:ignore="LabelFor"
+                />
+
+            <EditText
+                android:id="@+id/NumberTwo"
+                android:hint="@string/NumTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/NumberOne"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="numberDecimal"
+                android:autofillHints=""
+                tools:ignore="LabelFor"
+                />
+
+            <Button
+                android:id="@+id/CalcMod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NumberTwo"
+                android:layout_marginTop="15dp"
+                android:text="@string/CalcMod"
+                />
+
+            <TextView
+                android:id="@+id/CalcModResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NumberTwo"
+                android:layout_toEndOf="@id/CalcMod"
+                android:layout_marginStart="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                />
+
+            <Button
+                android:id="@+id/CalcAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CalcMod"
+                android:layout_marginTop="15dp"
+                android:text="@string/CalcAdd"
+                />
+
+            <TextView
+                android:id="@+id/CalcAddResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CalcMod"
+                android:layout_toEndOf="@id/CalcAdd"
+                android:layout_marginStart="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                />
+
+            <Button
+                android:id="@+id/CalcSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CalcAdd"
+                android:layout_marginTop="15dp"
+                android:text="@string/CalcSub"
+                />
+
+            <TextView
+                android:id="@+id/CalcSubResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CalcAdd"
+                android:layout_toEndOf="@id/CalcSub"
+                android:layout_marginStart="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                />
+
+            <Button
+                android:id="@+id/CalcDiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CalcSub"
+                android:layout_marginTop="15dp"
+                android:text="@string/CalcDiv"
+                />
+
+            <TextView
+                android:id="@+id/CalcDivResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CalcSub"
+                android:layout_toEndOf="@id/CalcDiv"
+                android:layout_marginStart="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                />
+
+            <Button
+                android:id="@+id/CalcPow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CalcDiv"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/CalcPow"
+                />
+
+            <TextView
+                android:id="@+id/CalcPowResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CalcDiv"
+                android:layout_toEndOf="@id/CalcPow"
+                android:layout_marginStart="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

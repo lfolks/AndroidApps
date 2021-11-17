@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">
+        CalculateThis
+    </string>
+
+    <string name="app_title">
+        Calculate This!
+    </string>
+
+    <string name="NumOne">
+        Enter First Number…
+    </string>
+
+    <string name="NumTwo">
+        Enter Second Number…
+    </string>
+
+    <string name="CalcMod">
+        MOD
+    </string>
+
+    <string name="CalcAdd">
+        Addition
+    </string>
+
+    <string name="CalcSub">
+        Subtraction
+    </string>
+
+    <string name="CalcDiv">
+        Division
+    </string>
+
+    <string name="CalcPow">
+        Power
+    </string>
+</resources>
